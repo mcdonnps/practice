@@ -1,5 +1,6 @@
 require "rubygems"
 require "pry"
+# Using this for testing
 # CONFIGURABLE PARAMETERS
 
 # deck count is first command line argument or default of 2
