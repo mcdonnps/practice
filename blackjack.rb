@@ -1,5 +1,4 @@
 require "rubygems"
-require "pry"
 # Using this for testing
 # CONFIGURABLE PARAMETERS
 
@@ -118,9 +117,9 @@ end
 def result(hand)
   v = value(hand)
   case v
-  when 21     : hand.size == 2 && :natural || 21
-  when 17..20 : v
-  when 0..16  : raise "error, illegal resulting hand value"
+  when 21     then hand.size == 2 && :natural || 21
+  when 17..20 then v
+  when 0..16  then raise "error, illegal resulting hand value"
   else          :bust
   end
 end
